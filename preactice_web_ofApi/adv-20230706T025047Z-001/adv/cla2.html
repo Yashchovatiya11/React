@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cal2</title>
+	<script type="text/javascript">
+		
+		function dar(d)
+		{
+			var x = document.getElementById('no1').value;
+
+			var y = document.getElementById('no2').value;
+
+			if (d.value == "Sum")
+			{
+				var s = parseInt(x)+parseInt(y);
+
+				document.getElementById('ans').value = s;
+			}
+
+			else if (d.value == "Sub")
+			{
+				var s = parseInt(x)-parseInt(y);
+
+				document.getElementById('ans').value = s;
+			}
+
+			else if (d.value == "Multi")
+			{
+				var s = parseInt(x)*parseInt(y);
+
+				document.getElementById('ans').value = s;
+			}
+
+			else
+			{
+				var s = parseInt(x)/parseInt(y);
+
+				document.getElementById('ans').value = s;
+			}
+		}
+
+	</script>
+</head>
+<body>
+
+	<div style="text-align: center;">
+		
+		<form>
+							
+			NO1 :	<input type="text" name="" id="no1">
+			<br><br>
+			NO2 :	<input type="text" name="" id="no2">
+			<br><br>
+			<input type="button" name="" value="Sum" onclick="dar(this)">
+			<input type="button" name="" value="Sub" onclick="dar(this)">
+			<input type="button" name="" value="Multi" onclick="dar(this)">
+			<input type="button" name="" value="Div" onclick="dar(this)">
+			<br><br>
+			<input type="text" name="" id="ans">
+
+		</form>
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cal</title>
+	<script type="text/javascript">
+		
+		function getdata()
+		{
+
+			var x = document.getElementById('no1').value;
+
+			var y = document.getElementById('no2').value;
+
+			var s = parseInt(x)+parseInt(y);
+
+			document.getElementById('ans').value = s;
+
+		}
+
+		function getsub()
+		{
+			var x = document.getElementById('no1').value;
+
+			var y = document.getElementById('no2').value;
+
+			var sb = parseInt(x)-parseInt(y);
+
+			document.getElementById('ans').value = sb;
+		}
+
+		function getmulti()
+		{
+			var x = document.getElementById('no1').value;
+
+			var y = document.getElementById('no2').value;
+
+			var m = parseInt(x)*parseInt(y);
+
+			document.getElementById('ans').value = m;
+		}
+
+		function getdiv()
+		{
+			var x = document.getElementById('no1').value;
+
+			var y = document.getElementById('no2').value;
+
+			var d = parseInt(x)/parseInt(y);
+
+			document.getElementById('ans').value = d;
+		}
+
+	</script>
+</head>
+<body>
+
+	<div style="text-align: center;">
+					
+		NO1 :	<input type="text" name="" id="no1">
+		<br><br>
+		NO2 :	<input type="text" name="" id="no2">
+		<br><br>
+		<input type="button" name="" value="Sum" onclick="getdata()">
+		<input type="button" name="" value="Sub" onclick="getsub()">
+		<input type="button" name="" value="Multi" onclick="getmulti()">
+		<input type="button" name="" value="Div" onclick="getdiv()">
+		<br><br>
+		<input type="text" name="" id="ans">
+		
+	</div>
+
+</body>
+</html>

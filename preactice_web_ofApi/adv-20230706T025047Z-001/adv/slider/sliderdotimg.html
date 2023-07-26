@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sliderdotimg</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        .main
+        {
+            width: 100%;
+            height: 10vh;
+            position: relative;
+        }
+        #btnpre
+        {
+            position: absolute;
+            top: 230px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 50px;
+            border-radius: 50%;
+        }
+        #btnnext
+        {
+            position: absolute;
+            top: 230px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 50px;
+            border-radius: 50%;
+        }
+        .dotmain
+        {
+            position: absolute;
+            top: 550px;
+            left: 550px;
+            width: 100%;
+            display: flex;
+            /* justify-content: spac; */
+
+        }
+        .dot
+        {
+            width: 50px;
+            height: 50px;
+            /* border-radius: 50%; */
+            background-color: black;
+            display: block;
+            margin: 5px;
+            transition: 0.5s;
+        }
+        .dot img:hover
+        {
+           opacity: 1;
+        }
+
+    </style>
+    <script>
+        var ne=0;
+        function slider()
+        {
+            var a = document.getElementsByClassName('imag')
+            for (let i = 0; i < a.length; i++) 
+            {
+                a[i].style.display="none";
+            }
+                a[ne].style.display="block";
+        }
+        function pre()
+        {
+            ne--;
+            slider();
+        }
+        function next()
+        {     
+            ne++;
+            slider();
+        }
+        function ie1()
+        {
+            for (let i = 0; i < a.length; i++) 
+            {
+                a[i].style.display="none";
+            }
+                a[ne].style.display="block";
+        }
+        function ie2()
+        {
+            for (let i = 0; i < a.length; i++) 
+            {
+                a[i].style.display="none";
+            }
+                a[ne].style.display="block";
+        }
+        function ie3()
+        {
+            for (let i = 0; i < a.length; i++) 
+            {
+                a[i].style.display="none";
+            }
+                a[ne].style.display="block";
+        }
+        function ie4()
+        {
+            for (let i = 0; i < a.length; i++) 
+            {
+                a[i].style.display="none";
+            }
+                a[ne].style.display="block";
+        }
+        function ie5()
+        {
+            for (let i = 0; i < a.length; i++) 
+            {
+                a[i].style.display="none";
+            }
+                a[ne].style.display="block";
+        }
+        window.onload=function()
+        {
+            slider();
+        }
+
+
+    </script>
+</head>
+<body>
+    
+   <div class="main">
+
+        <img src="img/m1.webp" alt="" class="imag" width="100%" height="500px">
+        <img src="img/m2.webp" alt="" class="imag" width="100%" height="500px">
+        <img src="img/m3.webp" alt="" class="imag" width="100%" height="500px">
+        <img src="img/m4.webp" alt="" class="imag" width="100%" height="500px">
+        <img src="img/m5.webp" alt="" class="imag" width="100%" height="500px">
+
+   </div>
+
+
+    <button onclick="pre()" id="btnpre"><i class="fa-solid fa-caret-left"></i></button>
+    <button onclick="next()" id="btnnext"><i class="fa-solid fa-caret-right"></i></button>
+
+    <div class="dotmain">
+        <div class="dot" id="im1">
+            <img src="img/m1.webp" alt="" width="100%" height="100%" onclick="ie1()">
+        </div>
+        <div class="dot" id="im2">
+            <img src="img/m2.webp" alt="" width="100%" height="100%" onclick="ie2()">
+        </div>
+        <div class="dot" id="im3">
+            <img src="img/m3.webp" alt="" width="100%" height="100%" onclick="ie3()">
+        </div>
+        <div class="dot" id="im4">
+            <img src="img/m4.webp" alt="" width="100%" height="100%" onclick="ie4()">
+        </div>
+        <div class="dot" id="im5">
+            <img src="img/m5.webp" alt="" width="100%" height="100%" onclick="ie5()">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Restaurant Menu - Card</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+	<link rel="stylesheet" href="webfonts/">
+	<link rel="stylesheet" href="CSS/all.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+	</style>
+</head>
+<body>
+	<header class="position-sticky top-0">
+			<div class="col-12 rounded">
+				<div class="row bg-opacity-75 color">
+					<div class="row text-center fontshd">
+						<div class="col-lg-4 col-ld-6">
+							<i class="fa-solid fa-utensils fontheader pe-2"></i>
+							Darshan M. Sojitra
+						</div>
+						<div class="col-lg-4 col-ld-6 contect">
+							<i class="fa-solid fa-phone fontheader pe-2"></i>
+							<a href="#">93289 24355</a>
+						</div>
+						<div class="col-lg-4 col-ld-6 contect">	
+							<i class="fa-solid fa-envelope fontheader pe-2"></i>
+							<a href="#">sojitra94@food.com</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 nameres text-light  fw-bolder text-center">
+							BreakFast Food Restaurant
+						</div>
+					</div>
+				</div>
+			</div>
+	</header>
+
+	<div class="container">
+		<div class="row p-3 d-flex justify-content-evenly">
+
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12  border border-1 border-dark rounded  text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/p11.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Veggie <br>Pizza</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">When you want to jazz up your cheese pizza with color and texture, veggies are the perfect topping. And you’re only limited by your imagination. Everything from peppers and mushrooms, to eggplant and onions make for an exciting and tasty veggie pizza.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 250
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit1()" id="it1">
+								</div>
+							</div>
+						</div>
+			</div>
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12  border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/p12.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Meat <br> Pizza</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">If pepperoni just isn’t enough, and you’re looking for a pie with a bit more heft, a meat pizza is a perfect and popular choice. Pile on ground beef and sausage for a hearty meal.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 320
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit2()" id="it2">
+								</div>
+							</div>
+						</div>
+			</div>
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12  border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/p13.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Margherita <br>Pizza</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">Deceptively simple, the Margherita pizza is made with basil, fresh mozzarella, and tomatoes. There’s a reason it’s an Italian staple and one of the most popular types of pizza in the country.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 350
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit3()" id="it3">
+								</div>
+							</div>
+						</div>
+			</div>	
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12  border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/p14.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Hawaiian <br>Pizza</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">Pineapple might not be the first thing that comes to mind when you think pizza. But add in some ham and it creates an unexpectedly solid sweet and salty combination for this type of pizza.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 270
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit4()" id="it4">
+								</div>
+							</div>
+						</div>
+			</div>
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12  border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/p15.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>The Works <br>Pizza</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">when the supreme just isn’t enough, you’re ready for the works. It’s a step up in heartiness from the supreme. The “works” usually involves a wide variety of veggie toppings including onions, olives, and mushrooms, plus bacon and pepperoni.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 310
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit5()" id="it5">
+								</div>
+							</div>
+						</div>
+			</div>
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12  border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/s11.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Cucumber Sandwich</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">A sandwich native to England is an easy to prepare, yet delicious kind of sandwich around, prepared with cucumber. Immersed in butter and completely layered with finely sliced cucumber, it is spread on a super-thin white bread spruced up with some cream cheese, salmon and sprinkled salt.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 120
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit6()" id="it6">
+								</div>
+							</div>
+						</div>
+			</div>	
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12  border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/s12.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Chutney sandwich</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">This plain yet zingy type of sandwich is easy to make and is the best snack for tea time. It is prepared using soft white bread, cut the edges if you want and slather the slices with a lot of butter, spread green chutney on it to complete the sandwich. You can add thinly sliced cucumber and tomato for a better taste!</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 230
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit7()" id="it7">
+								</div>
+							</div>
+						</div>
+			</div>
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12  border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/s13.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul> Olives <br> sandwich</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">Stuffed with Olives this is a healthy sandwich, to make it a little more interesting you can add a lot of tomatoes, onions, bell pepper, capsicum, hard-boiled eggs and garnish it with some basil leaves to make your sandwich more interesting and tasty!</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 200
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit8()" id="it8">
+								</div>
+							</div>
+						</div>
+			</div>
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12  border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/s14.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Grilled cheese sandwich</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">Grilled Cheese Sandwich is like one of those favorite kids in the family! The most liked among all the different types of sandwiches! Because it has CHEESE!! This sandwich is made in a sandwich toaster, griddle or frying pan using different types of cheese and heating the cheese between the bread. </div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 180
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit9()" id="it9">
+								</div>
+							</div>
+						</div>
+			</div>	
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12  border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/s15.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Paneer<br>sandwich</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">Paneer sandwich is easy to make and a healthy option for your midnight hunger or otherwise. Here’s an easy tip! Grab your paneer in a bowl and crumble it, add veggies (whatever you like), add herbs, salt, pepper, red and green chili powder, mix it well! If you like to make it more interesting you can grate a little cheese over it!</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 230
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit10()" id="it10">
+								</div>
+							</div>
+						</div>
+			</div>
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12  border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/i11.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Penne Ala Vodka Pasta</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">Create this classic with Italian plum tomatoes, Parmesan cheese, other ingredients and a dash of vodka. This tasty and easy veg pasta recipe is a cheesy delight with minimum of ingredients and maximum of flavour to relish on.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 170
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit11()" id="it11">
+								</div>
+							</div>
+						</div>
+			</div>
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12 border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/i12.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Sicilian Spicy Pasta</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">A meal in minutes. Broccoli, pasta and cheese come together to give you this satisfying meal in a snap!  It may seem like an unlikely pair but broccoli and pasta actually work really well together.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 220
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit12()" id="it12">
+
+								</div>
+							</div>
+						</div>
+			</div>	
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12 border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/i13.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Four Cheese Pasta</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">The cheesiest pasta guaranteed! Chef Vicky Ratnani cooks up a delectable dish by combining four different cheeses - parmesan, cheddar, brie and emmental. Hassle free easy pasta recipe with lots of flavour and goodness of cheese.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 150
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit13()" id="it13">
+
+								</div>
+							</div>
+						</div>
+			</div>	
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12 border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/i14.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Whole Wheat Pasta in Mushroom Sauce Pasta</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">Mushrooms, white wine and cheese create a plateful of deliciousness. Give it a healthy spin by opting for whole wheat pasta. If you're counting calories even while thinking of pasta, then this whole-wheat version is what you want.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 180
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit14()" id="it14">
+
+								</div>
+							</div>
+						</div>
+			</div>	
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12 border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/i15.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Ravioli with Coconut Milk and Lemongrass Sauce Pasta</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">Smooth, velvety ravioli stuffed with vegetables, bathed in coconut milk sauce. High on healthy vegetables and low on calories. This amazing, creamy veg pasta recipe isn't going to cost you your diet plans.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 210
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit15()" id="it15">
+
+								</div>
+							</div>
+						</div>
+			</div>	
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12 border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/c11.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Watermelon Sangria</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">Try this refreshing twist on white wine sangria made with watermelon in the mix. Be sure to allow about four hours for the sangria to chill so all the flavors can develop.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 100
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit16()" id="it16">
+
+								</div>
+							</div>
+						</div>
+			</div>	
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12 border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/c12.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Blueberry Martini</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">Blueberry juice takes center stage in this fantastic vodka blueberry martini. It is fruity, refreshing, and an extraordinary cocktail that is easy to mix up.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 170
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit17()" id="it17">
+
+								</div>
+							</div>
+						</div>
+			</div>	
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12 border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/c13.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Strawberry Daiquiri</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">The strawberry daiquiri is the best-known cocktail of the lot and among the most-loved. Rum is a fabulous pairing for strawberries, and the recipe marries those flavors with simple syrup and lime juice.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 200
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit18()" id="it18">
+
+								</div>
+							</div>
+						</div>
+			</div>	
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12 border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/c14.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Lemon Drop</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">Moisten half of the rim of a cocktail glass with a lemon and apply sugar. Build all ingredients in a cocktail shaker. Fill with ice, cap shaker, and shake until well-chilled and integrated. Fine strain into the prepared glass.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 210
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit19()" id="it19">
+
+								</div>
+							</div>
+						</div>
+			</div>	
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12 border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/c15.webp" alt="" class="w-100 h-50 rounded-5">
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Banana Milkshake</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">This milkshake is good for your health as it is packed with proteins. To begin with, take one glass of milk (cold) and pour it into the mixer. Cut thin round slices of banana and put in the blender. Add one tsp sugar and cardamom powder to it.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 190
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit20()" id="it20">
+
+								</div>
+							</div>
+						</div>
+			</div>	
+			<div class="col-xxl-3 col-xl-3 col-lg-5 col-md-5 col-sm-12 border border-1 border-dark rounded text-dark rounded-5 p-3 m-3">
+						<div class="row">
+							<img src="Image/c16.webp" alt="" class="w-100 h-50 rounded-5" >
+						</div>
+						<div class="row">
+							<div class="col-12 fs-2 fw-bolder text-center text-decoration-underline"><ul>Apple Martini</ul></div>
+						</div>
+						<div class="row">
+							<div class="col-12 fs-6 fw-5 text-center">Appletinis for everyone! It's the drink that adorns nearly every modern martini menu and one of the best-loved vodka drinks. The green apple schnapps recipe is always a hit. When you're in the mood for something with less pucker, transform it into a dry martini with calvados and dry vermouth.</div>
+						</div>
+						<div class="row">
+							<div class="col-12 my-4 d-flex justify-content-between text-center">
+								<div class="col-10 fs-3 fw-bolder">
+									Price :  $ 250
+								</div>
+								<div class="col-2">
+									<input type="checkbox" name="it1" class="w-100 h-100" onchange="netamountit21()" id="it21">
+								</div>
+							</div>
+						</div>
+						<div style="padding-bottom: 50px; display: block;"></div>
+			</div>	 
+
+		</div>
+	</div>
+			
+			<footer class="position-fixed bottom-0 w-100">
+				<div class="row bg-primary bg-opacity-75 mx-auto rounded-top p-4 d-flex justify-content-center">
+					<div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-xs-12 d-flex align-items-center justify-content-center text-light footerfs  text-center">
+						<div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-xs-6 me-3">Bill Amt. </div>
+						<input type="text" readonly class="w-50 text-center inputfont fw-bolder" id="bill">
+					</div>
+					<div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-xs-12 d-flex align-items-center justify-content-center text-light footerfs  text-center">
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6 me-3">TEX(8%). </div>	
+						<input type="text" readonly class="w-50 text-center inputfont fw-bolder" id="gst">
+					</div>
+					<div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-xs-12 d-flex align-items-center justify-content-center text-light footerfs  text-center">
+						<div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-xs-6 me-3">Net Amt. </div>
+						<input type="text" readonly class="w-50 text-center inputfont fw-bolder" id="netbill">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="JS/bootstrap.min.js"></script>
+	<script src="JS/bootstrap.bundle.js"></script>
+	<script src="JS/script.js"></script>
+
+</body>
+</html>

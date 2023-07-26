@@ -1,0 +1,181 @@
+.contect a,.contect i
+{
+	color: yellow;
+	text-decoration: none;
+}
+.contect a:hover
+{
+	color: black !important;
+	transition: .5s;
+}
+.nameres
+{
+	font-family: 'Patrick Hand', cursive;
+	letter-spacing: 1.5px;
+}
+.color
+{
+	background-color: rgba(41, 39, 39, 0.7);
+	color: yellow!important;
+}
+.color .ho:hover
+{
+	/* background-color: rgba(41, 39, 39, 0.7); */
+	color: black!important;
+}
+
+@media screen and (max-width:576px) 
+{
+	.nameres
+	{
+		font-size: 20px;
+		padding: 0px;
+	}
+	.fontshd
+	{
+		font-size: 15px;
+		padding: 5px;
+	}
+	.footerpd
+	{
+		padding: 10px;
+	}
+	.footerfs,.fontheader
+	{
+		font-size: 16px;
+	}
+	.inputfont
+	{
+		font-size: 18px;
+	}
+	.footerfs .inputfont
+	{
+		margin-left: auto;
+	}
+}
+@media screen and (min-width:576px) and (max-width:768px)
+{
+	.nameres
+	{
+		font-size: 25px;
+		padding: 0px;
+	}
+	.fontshd
+	{
+		font-size: 15px;
+		padding: 10px;
+	}
+	.footerpd
+	{
+		padding: 15px;
+	}
+	.footerfs,.fontheader
+	{
+		font-size: 18px;
+	}
+	.inputfont
+	{
+		font-size: 20px;
+	}
+	
+}
+@media screen and (min-width:768px) and (max-width:992px)
+{
+	.nameres
+	{
+		font-size: 30px;
+		padding: 5px;
+	}
+	.fontshd
+	{
+		font-size: 20px;
+		padding: 10px;
+	}
+	.footerpd
+	{
+		padding: 20px;
+	}
+	.footerfs,.fontheader
+	{
+		font-size: 18px;
+	}
+	.inputfont
+	{
+		font-size: 22px;
+	}
+}
+@media screen and (min-width:992px) and (max-width:1200px)
+{
+	.nameres
+	{
+		font-size: 35px;
+		padding: 5px;
+	}
+	.fontshd
+	{
+		font-size: 20px;
+		padding: 15px;
+	}
+	.footerpd
+	{
+		padding: 25px;
+	}
+	.footerfs,.fontheader
+	{
+		font-size: 20px;
+	}
+	.inputfont
+	{
+		font-size: 25px;
+	}
+}
+@media screen and (min-width:1200px) and (max-width:1400px)
+{
+	.nameres
+	{
+		font-size: 40px;
+		padding: 10px;
+	}
+	.fontshd
+	{
+		font-size: 25px;
+		padding: 15px;
+	}
+	.footerpd
+	{
+		padding: 30px;
+	}
+	.footerfs,.fontheader
+	{
+		font-size: 22px;
+	}
+	.inputfont
+	{
+		font-size: 28px;
+	}
+}
+@media screen and (min-width:1400px)
+{
+	.nameres
+	{
+		font-size: 45px;
+		padding: 10px;
+	}
+	.fontshd
+	{
+		font-size: 25px;
+		padding: 20px;
+	}
+	.footerpd
+	{
+		padding: 35px;
+	}
+	.footerfs,.fontheader
+	{
+		font-size: 25px;
+	}
+	.inputfont
+	{
+		font-size: 30px;
+	}
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>selector</title>
+	<style type="text/css">
+		.sqr
+		{
+			width: 200px;
+			height: 200px;
+			background-color: darkred;
+			display: none;
+		}
+		.rt
+		{
+			height: 200px;
+			width: 300px;
+			background-color: darkblue;
+			display: none;
+		}
+
+		.btn1
+		{
+			margin: 20px;
+			background-color: darkred;
+			border: 2px solid black;
+			border-radius: 10px;
+			color: white;
+			padding: 15px;
+			transition: 0.7s;
+			font-weight: 900;
+		}
+		.btn1:hover
+		{
+			background-color: darkblue;
+			border-radius: 20px;
+		}
+		.btn2
+		{
+			margin: 20px;
+			background-color: darkblue;
+			border: 2px solid black;
+			border-radius: 10px;
+			color: white;
+			padding: 15px;
+			transition: 0.7s;
+			font-weight: 900;
+		}
+		.btn2:hover
+		{
+			background-color: darkred;
+			border-radius: 20px;
+		}
+		.dar
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 150px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		
+		function sq()
+		{
+			document.getElementById('sqr1').style.display="block"
+		}
+
+
+		function rta()
+		{
+			document.getElementById('rtan').style.display="block"
+		}
+
+
+	</script>
+
+</head>
+<body>
+
+	<div class="dar">
+		<div class="sqr" id="sqr1"></div>
+		<button onclick="sq()" class="btn1">Click Here</button>
+
+		<br>
+
+		<div class="rt" id="rtan"></div>
+		<button onclick="rta()" class="btn2">Click Here</button>
+	</div>
+
+</body>
+</html>

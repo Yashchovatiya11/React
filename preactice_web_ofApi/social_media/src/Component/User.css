@@ -1,0 +1,86 @@
+.user {
+     width: 50%;
+     margin: auto;
+     background-color: cadetblue;
+}
+
+.user-container {
+     background-color: #ffffff;
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+}
+
+.user-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+}
+
+.user-row {
+     display: flex;
+     flex-wrap: wrap;
+     margin: -10px;
+     flex-direction: column;
+     justify-content: center !important;
+}
+
+.profile {
+     position: relative;
+     background-color: #ffffff;
+     border: 1px solid #000000;
+     border-radius: 5px;
+     padding: 16px;
+     margin: 10px;
+     align-items: center;
+     
+     width: 75%;
+     /* Adjust the width as needed */
+     overflow: hidden;
+     cursor: pointer;
+     transition: box-shadow 0.3s ease-in-out;
+}
+
+
+
+.profile:hover {
+     box-shadow: 0 0 20px #000000;
+}
+
+
+
+.profile-images img {
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     object-fit: cover;
+     border: 2px solid #fff;
+     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.profile-details {
+     /* margin-left: 20px; */
+     flex-grow: 1;
+}
+
+.username {
+     font-size: 16px;
+     font-weight: bold;
+     margin-bottom: 5px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     color: #000000;
+}
+
+.user-info {
+     margin-bottom: 5px;
+     font-size: 14px;
+     color: #3a3a3a;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}

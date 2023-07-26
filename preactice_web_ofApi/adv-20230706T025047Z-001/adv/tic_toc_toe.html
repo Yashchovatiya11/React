@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tic Toc Toe</title>
+	<script type="text/javascript">
+		
+		var t = 0;
+		function bt(x)
+		{
+
+			var k = document.getElementById('btn'+x).value
+			if(k == '')
+			{
+				if( t%2 == 0)
+				{
+					document.getElementById('btn'+x).value = "X";
+				}
+				else
+				{
+					document.getElementById('btn'+x).value = "O";	
+				}
+				t++;
+				checkwin()
+			}
+
+		}
+		function checkwin()
+		{
+			var btn1 = document.getElementById('btn1').value
+			var btn2 = document.getElementById('btn2').value
+			var btn3 = document.getElementById('btn3').value
+			var btn4 = document.getElementById('btn4').value
+			var btn5 = document.getElementById('btn5').value
+			var btn6 = document.getElementById('btn6').value
+			var btn7 = document.getElementById('btn7').value
+			var btn8 = document.getElementById('btn8').value
+			var btn9 = document.getElementById('btn9').value
+
+			win(btn1,btn2,btn3,"X");
+			win(btn4,btn5,btn6,"X");
+			win(btn7,btn8,btn9,"X");
+			win(btn1,btn4,btn7,"X");
+			win(btn2,btn5,btn8,"X");
+			win(btn3,btn6,btn9,"X");
+			win(btn1,btn5,btn9,"X");
+			win(btn3,btn5,btn7,"X");
+
+			win(btn1,btn2,btn3,"O");
+			win(btn4,btn5,btn6,"O");
+			win(btn7,btn8,btn9,"O");
+			win(btn1,btn4,btn7,"O");
+			win(btn2,btn5,btn8,"O");
+			win(btn3,btn6,btn9,"O");
+			win(btn1,btn5,btn9,"O");
+			win(btn3,btn5,btn7,"O");
+
+		}
+		function win(v1,v2,v3,sign)
+		{
+			if(v1 == sign && v2 == sign && v3 == sign)
+			{
+				alert(sign+" is win");
+
+
+				// for (var i = 0; i <=9; i++)
+				// {
+				// 	if('btn'+i == '')
+				// 	{
+				// 		var y = document.getElementById("btn"+i).disabled;
+				// 	}
+				// }
+			}
+		}
+
+
+
+	</script>
+	<style type="text/css">
+		
+		.main
+		{
+			width: 20%;
+			text-align: center;
+			background-color: blueviolet;
+			margin: auto;
+		}
+
+		input
+		{
+			width: 50px;
+			height: 50px;
+
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="main">
+	
+	<input type="button" name="" id="btn1" onclick="bt('1')">
+	<input type="button" name="" id="btn2" onclick="bt('2')">
+	<input type="button" name="" id="btn3" onclick="bt('3')">
+	<br><br>
+	<input type="button" name="" id="btn4" onclick="bt('4')">
+	<input type="button" name="" id="btn5" onclick="bt('5')">
+	<input type="button" name="" id="btn6" onclick="bt('6')">
+	<br><br>
+	<input type="button" name="" id="btn7" onclick="bt('7')">
+	<input type="button" name="" id="btn8" onclick="bt('8')">
+	<input type="button" name="" id="btn9" onclick="bt('9')">
+	<br><br>
+
+</div>
+
+
+</body>
+</html>

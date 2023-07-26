@@ -1,0 +1,138 @@
+/* body {
+    background-color: black !important;
+} */
+
+.main-box1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .box1 {
+    padding: 20px;
+    box-shadow: 0 0 2px;
+    width: 16.6666666667%;
+    margin: 10px auto;
+    border-radius: 4px;
+    margin-left: 5px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .box1:hover {
+    box-shadow: 0 0 10px #444d44;
+    transform: scale(1.05);
+  }
+  
+  .box1:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    /* background: linear-gradient(45deg, #00ff00, #ff00ff, #00ff00); */
+    background-color: antiquewhite;
+    background-size: 400% 400%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  
+  .box1:hover:before {
+    opacity: 1;
+  }
+  
+  .box-image1 img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .box-items1 {
+    text-align: center;
+  }
+  
+ .box-items1 h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1d1c1c;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 10px;
+    color: #191818;
+  }
+  
+  .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0e0d0d;
+  }
+  
+  .discount {
+    font-size: 16px;
+    color: #070707;
+    text-decoration: line-through;
+    margin-left: 5px;
+    color: #070707;
+  }
+  
+  .stars {
+    color: #00ff00;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    font-size: 14px;
+    color: #0c0c0c;
+    color: #060606;
+  }
+  
+  @keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+  
+    50% {
+        background-position: 400% 0;
+    }
+  
+    100% {
+        background-position: 0 0;
+    }
+  }
+  .phone{
+    padding: 20px;
+    box-shadow: 0 0 2px;
+    margin: 10px auto;
+    /* border-radius: 4px; */
+    margin-left: 15px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .phone:hover{
+    box-shadow: 0 0 10px #444d44;
+    transform: scale(1.05);
+  }
+  .big_phone{
+    height: 440px;
+    width: 500px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    object-fit: cover;
+  }
+  .big_phone:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #444d44;
+  }
+  .byebutan {
+    background-color: RGB(239 172 53);
+  }

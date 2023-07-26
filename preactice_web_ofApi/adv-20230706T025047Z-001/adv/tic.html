@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Toc Toe</title>
+    
+    <style>
+        .main
+        {
+            width: 700px ;
+            height: 700px;
+            margin: auto;
+        }
+
+        #div1,#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div9
+        {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            float: left;
+            font-size: 80px;
+            text-align: center;
+            /* background-color: black; */
+            /* border-color: white; */
+            /* color: white; */
+        }
+        #div1,#div4,#div7
+        {
+            clear: both;
+            border-left: none;
+        }
+        #div1,#div2,#div3
+        {
+            border-top: none;
+        }
+        #div3,#div6,#div9
+        {
+            border-right: none;
+        }
+        #div7,#div8,#div9
+        {
+            border-bottom: none;
+        }
+        /* #div1,#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div9:hover
+        {
+
+        } */
+    </style>
+    <script>
+
+        var b = 1;
+
+        function xo(a)
+        {
+            
+            if(b <= 9)
+            {
+                
+                if(b % 2 == 0)
+                {
+                    document.getElementById(a.id).innerHTML = 'X';
+                }
+                else
+                {
+                    document.getElementById(a.id).innerHTML = 'O';
+                }
+                b++;
+                if(check())
+                {
+                    alert("Winnner");
+                    reset();
+                }
+
+            }
+            else
+            {
+                alert("Match Is Draw");
+                reset();
+                b++;
+            }
+
+        }
+        function reset()
+        {
+
+            for(var i = 1 ; i <= 9 ; i++)
+            {
+
+                document.getElementById('div'+i).innerHTML = '';
+
+            }
+
+        }
+        function check()
+        {
+
+           if( val('div1','div2','div3') || val('div4','div5','div6') || val('div7','div8','div9') || val('div1','div4','div7') || val('div2','div5','div8') ||
+           val('div3','div6','div9') || val('div1','div5','div9') || val('div3','div5','div7')  )
+           {
+                return true;
+           }
+
+        }
+        function get(div)
+        {
+            return document.getElementById(div).innerHTML;
+        }
+
+        function val(div1,div2,div3)
+        {
+            if(get(div1) != '' && get(div2) != '' && get(div3) != '' && 
+            get(div1) == get(div2) && get(div2) == get(div3))
+            {
+                return true;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+    <div class="main">
+
+        <div id="div1" onclick="xo(this)"></div><div id="div2" onclick="xo(this)"></div><div id="div3" onclick="xo(this)"></div>
+        <div id="div4" onclick="xo(this)"></div><div id="div5" onclick="xo(this)"></div><div id="div6" onclick="xo(this)"></div>
+        <div id="div7" onclick="xo(this)"></div><div id="div8" onclick="xo(this)"></div><div id="div9" onclick="xo(this)"></div>
+
+
+    </div>
+
+</body>
+</html>

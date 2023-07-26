@@ -1,0 +1,44 @@
+.spacer {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.heading {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.card-text, t-white {
+  line-height: 20px;
+  color: white;
+}
+.morty-mobs {
+  transition: .5s;
+}
+.morty-mobs:hover {
+  transform: scale(1.11);
+}
+
+.text {
+  font-weight: bolder;
+  font-size: 16px;
+  color: rgb(143, 143, 143);
+}
+
+.status {
+  color: red;
+}
+
+.data  {
+  background-color: #3c3e44;
+  
+  
+}
+
+.content {
+  background-color: #272b33;
+}

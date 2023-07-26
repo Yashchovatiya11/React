@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="tic_css/all.min.css">
+	<style>
+		.cal
+		{
+			text-align: center;
+			background-color: black;
+			width: 20%;
+			margin: auto;
+			border-radius: 20px;
+		}
+		input
+		{
+			margin-top: 10px;
+			width: 200px;
+			padding: 10px 10px;
+			background-color: rgba(0, 183, 255, 0.4);
+			border: 3px solid white;
+			color: white;
+			border-radius: 20px;
+		}
+		button
+		{
+			padding: 15px;
+			border: none;
+			transition: 0.5s;
+			font-size: 20px;
+			text-align: center;
+			height: 50px;
+			width: 50px;
+			background-color: transparent;
+			color: white;
+		}
+		button:hover
+		{
+			box-shadow: 1px 1px 20px rgb(0, 183, 255);
+			border-radius: 10px;
+		}
+		.btn1
+		{
+			width: 105px;
+		}
+		.btn2
+		{
+			margin-bottom: 10px;
+		}
+		.btn3:hover
+		{
+			box-shadow: 1px 1px 20px rgb(208, 0, 255);
+		}
+	</style>
+	<script>
+
+		var d,b,c;
+
+		function Calc(a)
+		{
+
+			document.getElementById('ans').value += a;
+
+		}
+		function cal(x)
+		{
+
+			d = document.getElementById('ans').value
+			document.getElementById('ans').value = '';
+			ca = x;
+
+		}
+		function plu()
+		{
+
+			b = document.getElementById('ans').value
+
+			if (ca == '+') 
+			{
+				var p = parseFloat(d) + parseFloat(b);
+			}
+			else if (ca == '-')
+			{
+				p = parseFloat(d) - parseFloat(b);
+			}
+			else if (ca == '*') 
+			{
+				p = parseFloat(d) * parseFloat(b);
+			}
+			else 
+			{
+				p = parseFloat(d) / parseFloat(b);
+			}	
+			document.getElementById('ans').value = p;
+		}
+
+		function clr() 
+		{
+			
+			var y = document.getElementById('ans').value
+
+			var z = y.substring(0,y.length-1);
+
+			document.getElementById('ans').value = z;
+
+		}
+		function Clr1()
+		{
+			document.getElementById('ans').value = " ";
+		}
+	</script>
+</head>
+<body>
+
+
+	<div class="cal">
+
+		<input type="text" placeholder="0" id="ans" readonly>
+		<br>
+		<br>
+		<button onclick="Clr1()" value="clr" class="btn3"><i class="fa-solid fa-c"></i></button>
+		<button onclick="clr()" value="<x" class="btn1 btn3" ><i class="fa-solid fa-delete-left"></i></button>
+		<button onclick="cal('+')" value="+" class="btn3">+</button>
+		<br><br>
+		<button onclick="Calc(1)" value="1"><i class="fa-solid fa-1"></i></button>
+		<button onclick="Calc(2)" value="2"><i class="fa-solid fa-2"></i></button>
+		<button onclick="Calc(3)" value="3"><i class="fa-solid fa-3"></i></button>
+		<button onclick="cal('-')" value="-" class="btn3">-</button>
+		<br><br>
+		<button onclick="Calc(4)" value="4"><i class="fa-solid fa-4"></i></button>
+		<button onclick="Calc(5)" value="5"><i class="fa-solid fa-5"></i></button>
+		<button onclick="Calc(6)" value="6"><i class="fa-solid fa-6"></i></button>
+		<button onclick="cal('*')" value="*" class="btn3">*</button>
+		<br><br>
+		<button onclick="Calc(7)" value="7"><i class="fa-solid fa-7"></i></button>
+		<button onclick="Calc(8)" value="8"><i class="fa-solid fa-8"></i></button>
+		<button onclick="Calc(9)" value="9"><i class="fa-solid fa-9"></i></button>
+		<button onclick="cal('/')" value="/" class="btn3">/</button>
+		<br><br>
+		
+		<button class="btn3">+/-</button>
+		<button onclick="Calc(0)" value="0"><i class="fa-solid fa-0"></i></button>
+		<button onclick="Calc('.')" value="." class="btn3">.</button>
+		<button onclick="plu()" value="=" class="btn2 btn3">=</button>
+
+	</div>
+	
+
+</body>
+</html>
